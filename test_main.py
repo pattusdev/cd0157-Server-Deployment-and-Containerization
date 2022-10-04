@@ -26,13 +26,14 @@ def test_health(client):
     response = client.get('/')
     assert response.status_code == 200
     assert response.json == 'Healthy'
-    assert False
 
 
-# def assert_False(client):
-#     response = client.get('/')
-#     assert response.status_code == 200
-#     assert response.json == 'Not Healthy'
+def assert_False(client):
+    response = client.get('/')
+    assert response.status_code == 200
+    assert response.json == 'Not Healthy'
+
+
 '''
 Assert False
 '''
